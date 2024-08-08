@@ -1,0 +1,25 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(52, 52, 52);
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    color: teal;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: pink;
+    margin-bottom: 32px;
+    min-height: 350px;
+    padding: 32px;
+}
+
+section img {
+    max-width: 100%;
+}
