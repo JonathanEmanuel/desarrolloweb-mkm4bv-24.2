@@ -23,3 +23,35 @@ section {
 section img {
     max-width: 100%;
 }
+
+.foto {
+    border: 2px solid #323232;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #323232;
+}
+
+footer p {
+    color: whitesmoke;
+}
+
+.menu-item:hover {
+    background-color: #323232;
+    border-radius: 10px;
+}
+
+.menu-item:hover img {
+    width: 70px;
+    height: auto;
+}
+
+.text-violeta {
+    color: blueviolet;
+}
+
+p {
+    color: #323232;
+}
+
