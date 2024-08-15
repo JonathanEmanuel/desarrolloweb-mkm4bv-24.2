@@ -1,0 +1,154 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(52, 52, 52);
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px
+}
+
+h1, h2, h3, h4 {
+    color: teal;
+}
+
+h1 {
+    font-size: 64px;
+}
+nav ul {
+    min-height: 50px;
+    background-color: #323232;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    height: 32px;
+
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    border-bottom: 2px solid #fff;
+
+}
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section {
+    background-color: pink;
+    margin-bottom: 32px;
+    min-height: 350px;
+    padding: 32px;
+}
+
+section img {
+    max-width: 100%;
+}
+
+.foto {
+    border: 2px solid #323232;
+    border-radius: 8px;
+}
+
+footer {
+    background-color: #323232;
+    height: 60px;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    padding-right: 16px;
+}
+
+footer p {
+    color: whitesmoke;
+}
+
+
+.flex-container {
+    border: 2px solid slateblue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.menu-item {
+    border: 2px solid teal;
+
+}
+
+.menu-item:hover {
+    background-color: #323232;
+    border-radius: 10px;
+}
+
+.menu-item:hover img {
+    width: 70px;
+    height: auto;
+}
+
+.text-violeta {
+    color: blueviolet;
+}
+
+p {
+    color: #323232;
+}
+
+.flex-card {
+    margin-top: 32px;
+
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:16px;
+}
+
+.card {
+    border: 2px solid #323232;
+    background-color: white;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 24px;
+}
+
+.card a {
+    text-decoration: none;
+    background-color: teal;
+    text-align: center;
+    width: 100px;
+    color: #fff;
+    padding: 16px;
+    border-radius: 5px;
+
+}
+
+.card a:hover {
+    background-color: rgb(5, 176, 176);
+
+}
