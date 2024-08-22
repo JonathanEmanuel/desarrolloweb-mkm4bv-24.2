@@ -15,4 +15,4 @@ Propiedades:
 - right: unidad;
 
 
-![Captura de pantalla]()
+![Captura de pantalla](images/Clase_04.png)
