@@ -6,4 +6,4 @@
 - **transition:** propiedad duración
 - 
 
-
+![Captura de pantalla](images/Clase_06.gif)
