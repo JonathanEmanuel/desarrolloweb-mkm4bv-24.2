@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Moderustic", sans-serif;
+    margin-bottom: 32px;
+    font-weight: 400;
+    color: #2766e3;
+}
+
+h1 {
+    font-size: 64px;
+}
+
+h2 {
+    font-weight: 600;
+    color: #2b2b2b;
+    font-size: 4vw;
+}
+ul, a, p {
+    font-family: "Nunito Sans", sans-serif;
+    color: #2b2b2b;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #2766e3;
+    min-height: 50px;
+    /* optativo */
+    box-shadow: 0px 5px 10px #2b2b2b81;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+nav ul.menu {
+    min-height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+   /*  border: 1px dotted #fff; */
+    display: inline-block;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #2b2b2b;
+    transition: all ease-in-out 0.3s;
+}
+
+nav ul.sub-menu {
+    background-color: #2766e3;
+    box-shadow: 0px 5px 10px #2b2b2b81;
+
+    display: none;
+    list-style: none;
+    position: absolute;
+}
+
+.item-desplegable {
+    position: relative;
+}
+
+.item-desplegable:hover .sub-menu {
+    display: block;
+    transition: all ease-in-out 0.7s;
+
+}
+
+main {
+    margin: 0 auto;
+    width: 95vw;
+    min-height: 80vh;
+    padding: 16px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+    gap:10px;
+
+    overflow: hidden;
+}
+
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 100%;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    min-height: 10vh;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+}
+
+.box {
+    background-color: #2766e3;
+    box-shadow: 0px 3px 10px #2b2b2b81;
+
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h4 {
+    color: white;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* --------------------- TRANSFORMACIONES DE MOVIMIENTO --------------------- */
+.translate-x {
+    transform: translateX(-50px);
+}
+
+.translate-y {
+    transform: translateY(70px);
+}
+
+.translate {
+    transform: translate(-35px, -45px);
+}
+
+/* ---------------------- TRANSFORMACIONES DE ROTACIÓN ---------------------- */
+.rotate {
+    transform: rotate(60deg);
+}
+
+.rotate-x {
+    transform: rotateX(45deg);
+}
+
+.rotate-y {
+    transform: rotateY(50deg);
+}
+.rotate-z {
+    transform: rotateZ(30deg);
+}
+
+/* ---------------------- TRANSFORMACIONES DE ESCALADO ---------------------- */
+.scale-xM {
+    transform: scaleX(2);
+}
+
+.scale-xm {
+    transform: scale(0.5);
+}
+
+.scale-y {
+    transform: scaleY(1.8);
+}
+
+.scale:hover {
+    transform: scale(1.5);
+}
+
+.skew-x {
+    background-color: #1e56c6;
+    transform: skewX(45deg);
+}
+
+.skew-y {
+    transform: skewY(30deg);
+}
+
+.skew {
+    transform: skew(20deg, 15deg);
+}
+
+.color {
+    transition: background 1.8s;
+}
+
+.color:hover {
+    background-color: teal;
+}
+
+.color-circulo {
+    transition: background 2.8s, border-radius 1s, align-items 0.5s ;
+}
+
+.color-circulo:hover {
+    background-color: tomato;
+    border-radius: 50%;
+    align-items: end;
+}
+
+.color-circulo-scale{
+    transition: background 2.8s, border-radius 1s, transform 1s, width 4s;
+}
+
+.color-circulo-scale:hover {
+    background-color: tomato;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    width: 300px;
+    transform: scale(2) translateX(50px);
+}
+
+.scale-rotateY {
+    transition:  transform 3s, box-shadow 1s,  background 2s;
+
+}
+
+.scale-rotateY:hover{
+    background-color: teal;
+    transform: rotateY(50deg);
+    box-shadow: 20px 20px 10px #2b2b2b81;
+}
+
+.scale-translate {
+    transition: transform 3s, box-shadow 5s;
+}
+
+.scale-translate:hover {
+    transform: scale(4) translateX(-50px) translateY(-60px);
+    box-shadow: 10px 10px 10px #2b2b2b81;
+    
+}
