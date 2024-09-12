@@ -9,4 +9,4 @@
 - https://animate.style/
 - https://michalsnik.github.io/aos/
 
-![Captura de pantalla](images/clase_07.gif)
+![Captura de pantalla](images/clase_07.png)
