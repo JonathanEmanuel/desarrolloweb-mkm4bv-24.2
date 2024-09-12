@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300..800&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Moderustic", sans-serif;
+    margin-bottom: 32px;
+    font-weight: 400;
+    color: #2766e3;
+}
+
+h1 {
+    font-size: 64px;
+    text-align: center;
+    animation-name: shadow;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+h2 {
+    font-weight: 600;
+    color: #2b2b2b;
+    font-size: 4vw;
+}
+ul, a, p {
+    font-family: "Nunito Sans", sans-serif;
+    color: #2b2b2b;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+header {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #2766e3;
+    min-height: 50px;
+    /* optativo */
+    box-shadow: 0px 5px 10px #2b2b2b81;
+    position: sticky;
+    top: 0px;
+    z-index: 4;
+}
+
+nav ul.menu {
+    min-height: 50px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+   /*  border: 1px dotted #fff; */
+    display: inline-block;
+    width: 150px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+nav ul li a:hover {
+    background-color: #fff;
+    color: #2b2b2b;
+    transition: all ease-in-out 0.3s;
+}
+
+nav ul.sub-menu {
+    background-color: #2766e3;
+    box-shadow: 0px 5px 10px #2b2b2b81;
+
+    display: none;
+    list-style: none;
+    position: absolute;
+}
+
+.item-desplegable {
+    position: relative;
+}
+
+.item-desplegable:hover .sub-menu {
+    display: block;
+    transition: all ease-in-out 0.7s;
+}
+
+main {
+    margin: 0 auto;
+    width: 95vw;
+    min-height: 80vh;
+    padding: 16px;
+    margin-bottom: 6px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: start;
+    gap:10px;
+
+    overflow: hidden;
+}
+
+
+.row {
+    display: flex;
+}
+
+.col {
+    width: 100%;
+}
+
+.p-1 {
+    padding: 10px;
+}
+
+.p-2 {
+    padding: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+
+footer {
+    min-height: 10vh;
+    background-color: #2b2b2b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer .menu-footer {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.menu-footer li a {
+    color: #fff;
+    font-size: 32px;
+    transition: linear all 1s;
+}
+.menu-footer li a:hover {
+    font-size: 48px;
+    color: #2766e3;
+}
+
+footer p {
+    color: #fff;
+}
+
+.box {
+    background-color: #2766e3;
+    box-shadow: 0px 3px 10px #2b2b2b81;
+
+    height: 150px;
+    width: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h4 {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+
+
+.color {
+    transition: background 1.8s;
+    animation-name: change-color;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 2s;
+}
+
+.color:hover {
+}
+
+
+@keyframes change-color {
+    from {
+        background-color: #2766e3;
+    }
+
+    to {
+        background-color: teal;
+    }
+    
+}
+
+@keyframes shadow {
+    0% {
+        text-shadow: 0.5px 0.5px 5px #2b2b2b;
+    }
+    50% {
+        text-shadow: 1px 1px 5px #2b2b2b;
+    }
+
+    50% {
+        text-shadow: 2px 2px 5px #2b2b2b;
+    }
+
+    75% {
+        text-shadow: 1px 1px 5px #2b2b2b;
+    }
+}
+
+.color-circulo {
+    transition: background 2.8s, border-radius 1s, align-items 0.5s ;
+}
+
+.color-circulo:hover {
+    background-color: tomato;
+    border-radius: 50%;
+    align-items: end;
+}
+
+
+
+.scale-rotateY {
+    transition:  transform 3s, box-shadow 1s,  background 2s;
+
+}
+
+.scale-rotateY:hover{
+    background-color: teal;
+    transform: rotateY(50deg);
+    box-shadow: 20px 20px 10px #2b2b2b81;
+}
+
+.scale-translate {
+    transition: transform 3s, box-shadow 5s;
+    animation-name: zoom;
+    animation-duration: 4s;
+    animation-delay: 2s;
+}
+
+.scale-translate:hover {
+    animation-play-state: paused;
+    
+}
+
+@keyframes zoom {
+    to{
+        transform: scale(4) translateX(-50px) translateY(-60px);
+        box-shadow: 10px 10px 10px #2b2b2b81;
+    }
+}
+
+
+.footer {
+    background-color: #2766e3;
+    overflow: hidden;
+    padding: 5px;
+}
+
+.footer p {
+    animation-name: move;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(-250px);
+    }
+
+    1000% {
+        transform: translateX(100px);
+    }
+}
