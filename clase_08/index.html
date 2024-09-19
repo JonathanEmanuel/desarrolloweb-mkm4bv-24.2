@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería de Fotos</title>
+    <link rel="shortcut icon" href="images/fotografo.png" type="image/png">
+    <!-- Librerías -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="libs/lightbox2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1> Galería de Fotos</h1>
+        <img class="logo" src="images/fotografo.png" alt="Icon">
+    </header>
+    <main>
+        <section class="galeria">
+            <!-- lightbox -->
+            <div class="card">
+                <a href="images/buenos_aires.jpg" data-lightbox="roadtrip">
+                    <img class="foto" src="images/small/buenos_aires.jpg" alt="Buenos Aires">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+            <div class="card">
+                <a href="images/jujuy.jpg" data-lightbox="roadtrip" data-title="Jujuy">
+                    <img class="foto" src="images/small/jujuy.jpg" alt="Jujuy">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+
+            <div class="card">
+                <a href="images/misiones.jpg" data-lightbox="roadtrip" data-title="Misiones">
+                    <img class="foto" src="images/small/misiones.jpg" alt="Misiones">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+
+            <div class="card">
+                <a href="images/buenos_aires_2.jpg" data-lightbox="roadtrip" data-title="Buenos Aires">
+                    <img class="foto" src="images/small/buenos_aires_2.jpg" alt="Buenos Aires">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+            <div class="card">
+                <a href="images/jujuy_2.jpg" data-lightbox="roadtrip" data-title="Jujuy">
+                    <img class="foto" src="images/small/jujuy_2.jpg" alt="Jujuy">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+            <!-- / lightbox -->
+
+
+            <!-- GlightBox -->
+            <div class="card">
+                <a href="images/jujuy_3.jpg" 
+                    class="glightbox" 
+                    data-gallery="gallery1"
+                    >
+                    <img class="foto" src="images/small/jujuy_3.jpg" alt="Jujuy">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+
+            <div class="card">
+                <a href="images/neuquen.jpg" class="glightbox" data-gallery="gallery1">
+                    <img class="foto" src="images/small/neuquen.jpg" alt="Neuquen">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+
+            <div class="card">
+                <a href="images/rio_negro.jpg" class="glightbox" data-gallery="gallery1">
+                    <img class="foto" src="images/small/rio_negro.jpg" alt="Rio Negro">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+
+            <div class="card">
+                <a href="images/rio_negro2.jpg" class="glightbox" data-gallery="gallery1">
+                    <img class="foto" src="images/small/rio_negro2.jpg" alt="Rio Negro">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+
+            <div class="card">
+                <a href="images/tierra_del_fuego.jpg" class="glightbox" data-gallery="gallery1">
+                    <img class="foto" src="images/small/tierra_del_fuego.jpg" alt="Tierra del Fuego">
+                </a>
+                <p class="description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit sunt ea officiis consequuntur eligendi? A 
+                </p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p> ISEC | Desarrollo Web |  2024</p>
+    </footer>
+    <script src="libs/lightbox2/js/lightbox-plus-jquery.min.js"></script>
+    <script>
+        lightbox.option({
+          'resizeDuration': 500,
+          'wrapAround': true,
+          'fadeDuration': 1000
+        })
+    </script>
+    <script src="https://cdn.jsdelivr.net/gh/mcstudios/glightbox/dist/js/glightbox.min.js"></script>
+    <script type="text/javascript">
+        const lightbox = GLightbox({
+            touchNavigation: true,
+            loop: true,
+            slideEffect: 'fade'
+        });
+    </script>
+</body>
+</html>
