@@ -1,0 +1,40 @@
+header {
+    min-height: 15vh;
+    background-color: #9F4BF2;
+}
+
+main {
+    min-height: 75vh;
+}
+
+footer {
+    height: 10vh;
+    background-color: #2573D9;
+}
+
+.icono {
+    width: 64px;
+    height: auto;
+}
+
+section {
+    min-height: 100px;
+}
+
+.bg-gris {
+    background-color: #303030;
+} 
+
+.btn-personalizado {
+    background-color: #9F4BF2;
+    color: white;
+}
+
+.btn-personalizado:hover {
+    background-color: #752cbe;
+    color: white;
+}
+
+.bg-dark-2 {
+    background-color: #3030307e;
+}
